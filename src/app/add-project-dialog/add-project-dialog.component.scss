@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: right;
+
+  button {
+    padding: 0 10;
+  }
+}

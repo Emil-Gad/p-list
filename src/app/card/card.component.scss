@@ -1,0 +1,65 @@
+@media only screen and (min-width: 768px) {
+  mat-card {
+    width: 100%;
+    margin-bottom: 10px;
+
+    mat-card-content {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 40px);
+
+      div {
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    button {
+      margin-left: 10px;
+      border: none;
+      outline: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+/* Media query for mobile resolutions */
+@media only screen and (max-width: 767px) {
+  mat-card {
+    width: 100%;
+    margin-bottom: 10px;
+
+    mat-card-content {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .control-buttons {
+      display: flex;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}

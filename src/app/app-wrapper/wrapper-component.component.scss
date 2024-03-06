@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #d01d73;
+  color: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Media query for mobile resolutions */
+@media (max-width: 767px) {
+  .content {
+    padding: 20px;
+  }
+}

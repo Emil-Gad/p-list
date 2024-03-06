@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ project!.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <mat-icon color="accent">access_time_filled</mat-icon>
+      {{ project!.duration }}
+    </div>
+    <div>
+      <mat-icon color="accent">paid</mat-icon>
+      {{ project!.cost }}
+    </div>
+    <div>
+      <mat-icon color="accent">groups</mat-icon>
+      {{ project!.hasApprovalMeeting ? 'Yes' : 'No' }}
+    </div>
+    <div class="control-buttons">
+      <button mat-icon-button>
+        <mat-icon color="accent" (click)="edit.emit(project!.id)">edit</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon color="accent" (click)="remove.emit(project!.id)">delete</mat-icon>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

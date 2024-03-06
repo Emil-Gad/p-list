@@ -1,0 +1,25 @@
+<mat-dialog-content>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>Name:</mat-label>
+      <input matInput [(ngModel)]="project.name" name="name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Duration:</mat-label>
+      <input matInput type="number" [(ngModel)]="project.duration" name="duration" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Cost:</mat-label>
+      <input matInput type="number" [(ngModel)]="project.cost" name="cost" />
+    </mat-form-field>
+
+    <mat-checkbox [(ngModel)]="project.hasApprovalMeeting" name="hasApprovalMeeting">Has Approval Meeting</mat-checkbox>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button [disabled]="isDisabled" mat-raised-button color="primary" (click)="onSave()">Save</button>
+  <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+</mat-dialog-actions>
